@@ -1,18 +1,25 @@
 import React, { useContext } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { FaAngleDown } from 'react-icons/fa';
+import { FaAngleDown } from "react-icons/fa";
 
 const Navbar = () => {
   const navOption = (
     <>
       <li>
-        <Link className="font-bold">Solutions<FaAngleDown className="justify-center items-center"/> </Link>
+        <Link className="font-bold">
+          Solutions
+          <FaAngleDown className="justify-center items-center" />{" "}
+        </Link>
       </li>
       <li>
-        <Link className="font-bold">Company <FaAngleDown/></Link>
+        <Link className="font-bold">
+          Company <FaAngleDown />
+        </Link>
       </li>
       <li>
-        <Link className="font-bold">Resources <FaAngleDown/></Link>
+        <Link className="font-bold">
+          Resources <FaAngleDown />
+        </Link>
       </li>
       <li>
         <Link className="font-bold">Pricing</Link>
@@ -49,6 +56,12 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content mt-3 p-2 bg-white rounded-box w-52 text-center"
             >
               {navOption}
+              <button className="btn btn-outline text-black">Live Demo</button>
+
+          <button className="btn btn-success hover:bg-green-700 text-white">
+            Get Started
+          </button>
+             
             </ul>
           </div>
           <Link className="px-10">
@@ -65,20 +78,15 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 items-center">
             {navOption}
+            
           </ul>
         </div>
-        <div className="navbar-end gap-x-4 lg:pr-[120px]">
-          <>
-            <button className="btn btn-outline text-black">Live Demo</button>
-          </>
+        <div className="hidden lg:flex lg:navbar-end gap-x-4 lg:pr-[105px]">
+          <button className="btn btn-outline text-black">Live Demo</button>
 
-          <>
-            <Link>
-              <button className="btn btn-success hover:bg-green-700 text-white">
-                Get Started
-              </button>
-            </Link>
-          </>
+          <button className="btn btn-success hover:bg-green-700 text-white">
+            Get Started
+          </button>
         </div>
       </div>
     </div>

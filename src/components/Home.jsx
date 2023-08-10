@@ -6,7 +6,7 @@ import Body from "./Body";
 const Home = () => {
   return (
     <div>
-      <div className="bg-green-600 px-20 pt-20">
+      <div className="bg-green-600 md:px-20 md:pt-20">
         <p className="text-center bg-black text-white p-5">
           Version .2.0 Released with a new user database managements.{" "}
           <span className="underline">What’s new</span>
